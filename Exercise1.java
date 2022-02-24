@@ -1,15 +1,22 @@
-// Write a program to initialize a char variable and then store it in an int variable. Print the int variable's value on console.
+/* Write a program to check whether a number is positive or negative
+Test Data 1: x=31
+Expected Output: Number is positive
+Test Data 2: x=-31
+Expected Output: Number is negative
+*/
 
 class Exercise1 {
+
 	public static void main(String args[]) {
-        char ch = 'a';
-        System.out.println("char value: " + ch);
-        int b = int(ch) ;
-        System.out.println("int value: " + a);
-    }
+
+      int x = 31;
+     if (x > 0);
+     System.out.println("x is a positive number");
+     
+     int y = -31;
+     if (y < 0);
+     System.out.println("y is a negative number");
+    
+	}
+
 }
-		
-	
-	
-
-
