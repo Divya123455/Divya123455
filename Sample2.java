@@ -1,48 +1,33 @@
-// Complete and execute java Program for making a simple calculator using switch case
+// Complete and execute java Program for transpose of a matrix/two dimensional array
 class Sample2 {
 
 	public static void main(String args[]) {
 
-    		//Intialize the char variable below with operators (+, -, *, /) one by one and check the output
-    		char operator = '+';
-    		
-		int first=10,second=5,result;
+		//creating a matrix  
+		int original[][]={{1,3,4},{2,4,3},{3,4,5}};    
+    
+		//creating another matrix to store transpose of a matrix  
+		int transpose[][]=new int[3][3]; 
+		for (int i=0;i<3;i++)
+		{
+			for(int j=0;j<3;j++)
+			{
+				transpose[i][j]=original[j][i];
+				
+			}
+		}
+		System.out.println();
+		}
+		System.out.println("Print transpose of Matrix");
+    
+		/*Write code to transpose a matrix
+		
+		Print matrix after transpose:
+		1 2 3 
+		3 4 4 
+		4 3 5 
+		
+		*/
+		    
+   }
 
-    		switch (operator) {
-      		case '+':
-      			result=first+second;
-        
-        	System.out.println(first+ "+" +second+ "=" +result);
-        	break;//Write code to perform addition of first and second
-
-      		case '-':
-      			result=first-second;
-        	System.out.println(first+ "-" +second+ "=" +result);
-        	
-        	break;
-        	//Write code to perform subtraction 
-
-      		case '*':
-      			result=first*second;	
-        	System.out.println(first+ "*" +second+ "=" +result);
-        	break;
-        	
-        	//Write code to perform multiplication
-
-      		case '/':
-      				result=first/second;
-        	System.out.println(first+ "/" + second+ "=" +result);
-        	break;
-        	//Write code to perform division
-
-      		//If operator doesn't match any case constant (+, -, *, /)
-      		default:
-        	System.out.println("invalid")
-        	break;
-        	// Print Error stating operator is not correct
-       
-    		}
-
-    		System.out.println(first + "10 " + operator + "+ " + second + " 5 " + result);
-  	}
-}
